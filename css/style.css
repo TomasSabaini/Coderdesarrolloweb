@@ -94,6 +94,10 @@ header nav ul li a{
 .contacto div{
     display: flex;
 }
+.mapa{
+    display: flex;
+    justify-content: center;
+}
 
 /*----------REPUESTOS----------*/
 .Repuestos h2{
