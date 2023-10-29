@@ -34,7 +34,7 @@ header nav ul li{
 }
 header nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*----------MAIN----------*/
@@ -58,21 +58,16 @@ header nav ul li a{
     text-align: center;
     font-size: 25px;
 }
-/*.imagenes {
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-}*/
 .imagenes {
     width: 100%;
     height: auto;
     display: grid;
     justify-items: center;
-    margin: 20px;
+    /* margin: 20px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px;
     grid-template-areas: 
-        "xr150  xr250 xr190"
+        "xr150 xr250 xr190"
     ;
 }
 .img-xr150{
@@ -91,12 +86,8 @@ header nav ul li a{
     text-align: center;
     font-size: 25px;
 }
-.contacto div{
-    display: flex;
-}
-.mapa{
-    display: flex;
-    justify-content: center;
+.contacto-h2{
+    font-size: 35px;
 }
 
 /*----------REPUESTOS----------*/
@@ -191,7 +182,8 @@ footer{
     background-color: red;
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 10px;
+    width: 100%;
 }
 footer div{
     margin: 30px;
@@ -208,7 +200,10 @@ footer div{
             "xr190 xr190"
         ; 
     }
-    
+    footer{
+        display: inline-block;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -219,10 +214,6 @@ footer div{
         max-width: 200px;
         max-height: 200px;
     }
-    footer{
-        font-size: 10px;
-    }
-
 }
 @media screen and (max-width:730px){
     .imagenes{
@@ -238,10 +229,14 @@ footer div{
         font-size: 25px;
     }
     .fundado h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .fundado p{
-        font: 15px;
+        font-size: 15px;
+    }
+    .mapa{
+        width: 500px;
+        height: 500px;
     }
 }
 @media screen and (max-width:567px){
@@ -251,18 +246,46 @@ footer div{
     .hero{
         font-size: 15px;
     }
-    .fundado h2{
-        font-size: 15px;
-    }
-    .fundado p{
-        font-size: 10px;
-    }
+
     header nav{
         font-size: 15px;
     }
+    header nav ul{
+        justify-content: center;
+    }
+    .mapa{
+        width: 400px;
+        height: 400px;
+    }
 }
-@media screen and (max-width:350px){
-    footer{
+@media screen and (max-width:457px){
+    header div{
         display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    header nav{
+        font-size: 10px;
+    }
+    .imagenes{
+        margin: 5px;
+        padding: 5px;
+        width: auto;
+        }
+    .img-xr150{
+        width: 300px;
+        object-fit: cover;
+    }
+    .img-xr190{
+        width: 300px;
+        object-fit: cover;
+    }
+    .img-xr250{
+        width: 300px;
+        object-fit: cover;
+    }
+    .mapa{
+        width: 300px;
+        height: 300px;
     }
 }
