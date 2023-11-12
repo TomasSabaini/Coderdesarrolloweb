@@ -1,0 +1,30 @@
+header{
+    position: sticky;
+    top: 0;
+    div{
+        color: $color-segundario;
+        font-size: 35px;
+        background-color: $color-terciario;
+        display: flex;
+        align-items: center;
+        .ala{
+            width: 130px;
+            max-width: 250px;
+            height: auto !important;
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            background-color: gray;
+            display: flex;
+            li{
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: $color-segundario;
+                }
+            }
+        }
+    }
+}

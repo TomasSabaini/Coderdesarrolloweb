@@ -1,0 +1,137 @@
+@media screen and (max-width:1125px){
+    .imagenes{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: 
+            "xr150  xr250"
+            "xr190 xr190"
+        ; 
+    }
+    .RepuestosTarjetas{
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px;
+        grid-template-areas: 
+            "mineral semisintetico"
+            "transmision transmision"
+        ;
+        .RepuestosTarjetas div{
+            width: 350px;
+        }
+    }
+    footer{
+        display: inline-block;
+        text-align: center;
+    }
+}
+@media screen and (max-width:900px) {
+    header {
+        div{
+        font-size: 25px;
+            .ala{
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width:730px){
+    .hero{
+        font-size: 25px;
+    }
+    .imagenes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas: 
+            "xr150"
+            "xr250"
+            "xr190"
+        ;
+    }
+    .RepuestosTarjetas{
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px 450px;
+        grid-template-areas: 
+            "mineral"
+            "semisintetico"
+            "transmision"
+        ;
+    }
+    .fundado{
+        h2{
+            font-size: 20px;}
+        p{
+            font-size: 15px;
+        }
+    }
+    .mapa{
+        width: 500px;
+        height: 500px;
+        }
+}
+@media screen and (max-width:567px){
+    header {
+        div{
+            font-size: 15px;
+        }
+        nav{
+            font-size: 15px;
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+    .hero{
+        font-size: 15px;
+    }
+    .mapa{
+        width: 400px;
+        height: 400px;
+    }
+    .Repuestos {
+        h2{
+            font-size: 15px;
+        }
+    }
+    .RepuestosTarjetas {
+        div { 
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width:457px){
+    header {
+        div{
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        nav{
+            font-size: 10px;
+        }
+    }
+    .imagenes{
+        margin: 5px;
+        padding: 5px;
+        width: auto;
+        .xr150{
+            width: 300px;
+            object-fit: cover;
+        }
+        .xr190{
+            width: 300px;
+            object-fit: cover;
+        }
+        .xr250{
+            width: 300px;
+            object-fit: cover;
+        }
+    }
+    .mapa{
+        width: 300px;
+        height: 300px;
+    }
+}

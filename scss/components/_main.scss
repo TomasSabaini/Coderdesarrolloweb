@@ -1,0 +1,150 @@
+/*!-------index-------*/
+.hero{
+    color: $color-segundario;
+    font-size: 35px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/bienvenida.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+.fundado{
+    text-align: center;
+    font-size: 25px;
+}
+.imagenes{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+        "xr150 xr250 xr190"
+    ;
+    .img-xr150{
+        grid-area: xr150;
+    }
+    .img-xr250{
+        grid-area: xr250;
+    }
+    .img-xr190{
+        grid-area: xr190
+    }
+}
+
+/*-------contacto-------*/
+.contacto{
+    text-align: center;
+    font-size: 25px;
+    .contacto-h2{
+        font-size: 35px;
+    }
+}
+
+/*-------motos-------*/
+.productos{
+    text-align: center;
+    padding: 15px;
+}
+.productosEstilos{
+    display: flex;
+    text-align: center;
+    div{
+        border: 2px solid $color-primario;
+        height: 400px;
+        width: 600px;
+        margin: 5px;
+        h3{
+            margin-bottom: 10px;
+        }
+        img{
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: $color-segundario;
+            background-color: $color-primario;
+            padding:  5px;
+        }
+    }
+}
+
+/*----------REPUESTOS----------*/
+.Repuestos {
+    h2{
+        font-size: 25px;
+        text-align: center;
+        padding: 5px;
+    }
+}
+.RepuestosTarjetas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    grid-template-areas: "mineral semisintetico transmision";
+    div{
+        padding: 15px;
+        border: 2px solid $color-primario;
+        margin: 5px;
+        h3{
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        img{
+            height: 300px;
+        }
+        a{
+            text-decoration: none;
+            color: $color-segundario;
+            background-color: $color-primario;
+            padding: 5px;
+        }
+    }
+    .mineral{
+        grid-area: mineral;
+    }
+    .semisintetico{
+        grid-area: semisintetico;
+    }
+    .transmision{
+        grid-area: transmision;
+    }
+}
+
+/*----------SERVICE----------*/
+.Service{
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/service.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    .textService{
+        display: inline-block;
+        justify-content: center;
+        padding-top: 150px;
+        color: $color-segundario;
+    }
+    a{
+        text-decoration: none;
+        color: $color-segundario;
+        background-color: $color-primario;
+        padding: 5px;
+    }
+}
