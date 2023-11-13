@@ -1,4 +1,5 @@
 /*-------VARIABLES-------*/
+/*-------EXTENDS-------*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,900&display=swap");
 /*----------RESET----------*/
 * {
@@ -79,13 +80,32 @@ header {
   padding: 15px; }
 
 .productosEstilos {
-  display: flex;
-  text-align: center; }
+  display: grid;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "productoWave productoWavecd productoCb125" "productoXr190 productoXr250 productoXr150"; }
+  .productosEstilos .productoWave {
+    grid-area: productoWave; }
+  .productosEstilos .productoWavecd {
+    grid-area: productoWavecd; }
+  .productosEstilos .productoCb125 {
+    grid-area: productoCb125; }
+  .productosEstilos .productoXr190 {
+    grid-area: productoXr190; }
+  .productosEstilos .productoXr250 {
+    grid-area: productoXr250; }
+  .productosEstilos .productoXr150 {
+    grid-area: productoXr150; }
   .productosEstilos div {
     border: 2px solid black;
-    height: 400px;
-    width: 600px;
-    margin: 5px; }
+    margin: 5px;
+    padding: 5px;
+    width: 320px;
+    height: 300px; }
     .productosEstilos div h3 {
       margin-bottom: 10px; }
     .productosEstilos div img {
@@ -109,10 +129,12 @@ header {
   text-align: center;
   padding: 5px;
   justify-content: center;
+  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 450px;
   grid-template-areas: "mineral semisintetico transmision"; }
   .RepuestosTarjetas div {
+    width: 330px;
     padding: 15px;
     border: 2px solid black;
     margin: 5px; }
@@ -180,6 +202,10 @@ footer {
     grid-template-areas: "mineral semisintetico" "transmision transmision"; }
     .RepuestosTarjetas .RepuestosTarjetas div {
       width: 350px; }
+  .productosEstilos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "productoWave productoWavecd" "productoCb125 productoXr190" "productoXr250 productoXr150"; }
   footer {
     display: inline-block;
     text-align: center; } }
@@ -203,6 +229,10 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 450px 450px 450px;
     grid-template-areas: "mineral" "semisintetico" "transmision"; }
+  .productosEstilos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "productoWave" "productoWavecd" "productoCb125" "productoXr190" "productoXr250" "productoXr150"; }
   .fundado h2 {
     font-size: 20px; }
   .fundado p {

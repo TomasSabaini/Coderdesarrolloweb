@@ -19,6 +19,15 @@
             width: 350px;
         }
     }
+    .productosEstilos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "productoWave productoWavecd"
+            "productoCb125 productoXr190"
+            "productoXr250 productoXr150"
+        ;
+    }
     footer{
         display: inline-block;
         text-align: center;
@@ -56,6 +65,18 @@
             "mineral"
             "semisintetico"
             "transmision"
+        ;
+    }
+    .productosEstilos{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "productoWave"
+            "productoWavecd"
+            "productoCb125"
+            "productoXr190"
+            "productoXr250"
+            "productoXr150"
         ;
     }
     .fundado{
