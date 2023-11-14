@@ -36,7 +36,7 @@
 @media screen and (max-width:900px) {
     header {
         div{
-        font-size: 25px;
+        font-size: nth($size, 4);
             .ala{
                 max-width: 200px;
                 max-height: 200px;
@@ -46,7 +46,7 @@
 }
 @media screen and (max-width:730px){
     .hero{
-        font-size: 25px;
+        font-size: nth($size, 4);
     }
     .imagenes{
         grid-template-columns: 1fr;
@@ -81,44 +81,42 @@
     }
     .fundado{
         h2{
-            font-size: 20px;}
+            font-size: nth($size, 3);}
         p{
-            font-size: 15px;
+            font-size: nth($size, 2);
         }
     }
     .mapa{
-        width: 500px;
-        height: 500px;
+        @include flex (500px, 500px);
         }
 }
 @media screen and (max-width:567px){
     header {
         div{
-            font-size: 15px;
+            font-size: nth($size, 2);
         }
         nav{
-            font-size: 15px;
+            font-size: nth($size, 2);
             ul{
                 justify-content: center;
             }
         }
     }
     .hero{
-        font-size: 15px;
+        font-size: nth($size, 2);
     }
     .mapa{
-        width: 400px;
-        height: 400px;
+        @include flex (400px, 400px);
     }
     .Repuestos {
         h2{
-            font-size: 15px;
+            font-size: nth($size, 2);
         }
     }
     .RepuestosTarjetas {
         div { 
             h3{
-                font-size: 20px;
+                font-size: nth($size, 3);
             }
         }
     }
@@ -131,7 +129,7 @@
             width: 100%;
         }
         nav{
-            font-size: 10px;
+            font-size: nth($size, 1);
         }
     }
     .imagenes{
@@ -152,7 +150,6 @@
         }
     }
     .mapa{
-        width: 300px;
-        height: 300px;
+        @include flex (300px, 300px);
     }
 }

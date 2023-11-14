@@ -1,5 +1,6 @@
 /*-------VARIABLES-------*/
-/*-------EXTENDS-------*/
+/*-------LISTAS-------*/
+/*-------MIXINs-------*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,900&display=swap");
 /*----------RESET----------*/
 * {
@@ -30,7 +31,10 @@ header {
       margin: 10px; }
       header nav ul li a {
         text-decoration: none;
-        color: white; }
+        color: white;
+        transition: 1s; }
+      header nav ul li a:hover {
+        color: red; }
 
 /*!-------index-------*/
 .hero {
@@ -38,7 +42,7 @@ header {
   font-size: 35px;
   width: 100%;
   height: 400px;
-  background-image: url("../img/bienvenida.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.452)), url("../img/bienvenida.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -73,6 +77,9 @@ header {
   font-size: 25px; }
   .contacto .contacto-h2 {
     font-size: 35px; }
+  .contacto .contenedor {
+    display: inline-block;
+    justify-content: center; }
 
 /*-------motos-------*/
 .productos {
@@ -82,8 +89,8 @@ header {
 .productosEstilos {
   display: grid;
   text-align: center;
-  height: auto;
   width: 100%;
+  height: auto;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -105,6 +112,9 @@ header {
     margin: 5px;
     padding: 5px;
     width: 320px;
+    height: 300px;
+    transition-duration: 1s;
+    width: 320px;
     height: 300px; }
     .productosEstilos div h3 {
       margin-bottom: 10px; }
@@ -114,7 +124,15 @@ header {
       text-decoration: none;
       color: white;
       background-color: black;
-      padding: 5px; }
+      padding: 5px;
+      transition: 1s; }
+    .productosEstilos div a:hover {
+      background-color: red; }
+  .productosEstilos div:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75); }
 
 /*----------REPUESTOS----------*/
 .Repuestos h2 {
@@ -137,7 +155,8 @@ header {
     width: 330px;
     padding: 15px;
     border: 2px solid black;
-    margin: 5px; }
+    margin: 5px;
+    transition: 1s; }
     .RepuestosTarjetas div h3 {
       margin-bottom: 10px;
       font-size: 25px; }
@@ -147,7 +166,19 @@ header {
       text-decoration: none;
       color: white;
       background-color: black;
-      padding: 5px; }
+      padding: 5px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 red;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s; }
+    .RepuestosTarjetas div a:hover {
+      box-shadow: inset 0 100px 0 0 red; }
+  .RepuestosTarjetas div:hover {
+    transform: scale(1);
+    box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75); }
   .RepuestosTarjetas .mineral {
     grid-area: mineral; }
   .RepuestosTarjetas .semisintetico {
@@ -161,7 +192,7 @@ header {
   text-align: center;
   width: 100%;
   height: 500px;
-  background-image: url("../img/service.jfif");
+  background: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.452)), url("../img/service.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -175,7 +206,14 @@ header {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 5px; }
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 red;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s; }
+  .Service a:hover {
+    box-shadow: inset 0 100px 0 0 red; }
 
 footer {
   background-color: red;

@@ -3,7 +3,7 @@ header{
     top: 0;
     div{
         color: $color-segundario;
-        font-size: 35px;
+        font-size: nth($size, 5);
         background-color: $color-terciario;
         display: flex;
         align-items: center;
@@ -23,6 +23,10 @@ header{
                 a{
                     text-decoration: none;
                     color: $color-segundario;
+                    transition: 1s;
+                }
+                a:hover{
+                    color: $color-terciario;
                 }
             }
         }

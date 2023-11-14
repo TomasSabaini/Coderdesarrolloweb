@@ -3,5 +3,18 @@ $color-primario: black;
 $color-segundario: white;
 $color-terciario: red;
 
-/*-------EXTENDS-------*/
+/*-------LISTAS-------*/
 
+$size:
+10px,
+15px,
+20px,
+25px,
+35px;
+
+/*-------MIXINs-------*/
+
+@mixin flex ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
