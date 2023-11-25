@@ -129,7 +129,7 @@ header {
     .productosEstilos div a:hover {
       background-color: red; }
   .productosEstilos div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 11px 29px -7px rgba(0, 0, 0, 0.75); }
